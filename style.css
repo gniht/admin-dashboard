@@ -24,13 +24,15 @@ header {
   justify-content: space-between;
 }
 .search {
+  align-self: flex-start;
   align-items: center;
   display: flex; 
-  margin: 5px;   
+  margin: 10px;   
 }
 .search-input {
-  width: clamp(250px, 40vh, 400px);
+  width: max(250px, 40vw);
   padding: 5px;
+  margin: 10px;
   font-size: 1.1rem;
   border-radius: 15px;
   border: none;
@@ -47,5 +49,35 @@ header {
 }
 
 .main-content {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 20px 1fr; 
   background-color: rgb(209, 217, 223);  
+}
+
+.projects {
+  margin: 20px;
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));  
+  gap: 20px;
+}
+
+.project {  
+  border-left: 6px solid rgb(172, 145, 106); 
+  border-radius: 5px; 
+  background-color: white;
+  word-wrap: wrap;  
+}
+
+.projects-title {
+  margin: 20px 0 0 20px;
+  grid-column: 1/2;
+}
+
+.right-sidebar {  
+  margin: 20px;
+  grid-column: 2/3;
 }
