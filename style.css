@@ -67,7 +67,8 @@ header {
 
 .project {  
   border-left: 6px solid rgb(172, 145, 106); 
-  border-radius: 5px; 
+  border-radius: 5px;   
+  height: minmax(100px, 200px);
   background-color: white;
   word-wrap: wrap;  
 }
@@ -78,6 +79,38 @@ header {
 }
 
 .right-sidebar {  
-  margin: 20px;
+  margin: 0px;  
   grid-column: 2/3;
+}
+
+.announcements {
+  border-radius: 5px;
+  padding: 20px;
+  background-color: white;
+}
+
+.right-sidebar h3 {
+  margin: 20px 0;
+}
+
+.right-sidebar hr {
+  margin: 20px;
+  color: lightgrey;  
+}
+
+.right-sidebar h5 {
+  margin-bottom: 5px;
+}
+
+.right-sidebar p {
+  font-size: .8rem;     
+  overflow: scroll;
+  text-overflow: ellipsis;
+  height: 50px;
+}
+
+.trending {
+  background-color: white;
+  border-radius: 5px;
+  height: 200px;
 }
