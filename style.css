@@ -100,6 +100,8 @@ header .current-user .user-text {
 }
 
 .project {
+  display: flex;
+  flex-direction: column;
   padding: 15px;  
   border-left: 7px solid rgb(231, 197, 101); 
   border-radius: 6px;   
@@ -108,9 +110,23 @@ header .current-user .user-text {
   word-wrap: wrap;  
 }
 
+.project h3 {
+  margin-bottom: 4px;
+}
+
 .projects-title {
   margin: 20px 0 0 20px;
   grid-column: 1/2;
+}
+
+.project-actions {  
+  align-self: flex-end;
+  margin-top: 30px;
+  padding: 10px;
+}  
+
+.project-actions span {
+  margin: 6px;
 }
 
 .right-sidebar {  
